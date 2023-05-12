@@ -5,6 +5,7 @@ const server = require('./src/server')
 let mainWindow;
 
 function createWindow() {
+  server()
   mainWindow = new BrowserWindow({
     width: 1200,
     height: 700,
