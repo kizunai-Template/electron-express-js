@@ -2,13 +2,14 @@
   "name": "electron-express-js",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "electron.js",
   "scripts": {
     "server": "nodemon --watch . --exec 'electron electron.js'",
     "electron:start": "webpack --mode development --config webpack.config.dev.js && npm run server",
     "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js",
-    "build": "electron-builder build"
+    "build": "electron-builder build",
+    "build:win": "electron-builder build --win --x64"
   },
   "keywords": [],
   "author": "Lais Frigério da Silva",
