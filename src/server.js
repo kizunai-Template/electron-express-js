@@ -7,10 +7,6 @@ dotenv.config()
 
 const app = express()
 
-app.use(express.static(path.join(__dirname, '..', 'public')))
-app.set('views', './resources/templates/pages')
-app.set('view engine', 'pug')
-
 app.use(routes)
 
 const port = process.env.PORT || 3001
