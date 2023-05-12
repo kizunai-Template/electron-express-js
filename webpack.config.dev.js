@@ -6,7 +6,7 @@ module.exports = {
 	
 	entry: {
     index: [
-      path.resolve(__dirname, 'resources', 'styles', 'app.scss'),
+      path.resolve(__dirname, 'src', 'css', 'app.css'),
     ]
 	},
 
