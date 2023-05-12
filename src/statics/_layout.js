@@ -5,7 +5,7 @@ function layout(res, item) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${item.title}</title>
   <link rel="stylesheet" href="/css/main">
-  ${custom}
+  ${item.custom}
 </head>`
 
   const body = `<body>
