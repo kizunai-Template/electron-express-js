@@ -1,13 +1,13 @@
 const express = require('express')
-
 const router = express.Router()
 
+const layout = require('./statics/_layout')
+const index = require('./statics/index')
+
 router.get('/', (req, res) => {
-	res.render('index')
+	layout(res, index)
 })
 
-router.get('/about', (req, res) => {
-	res.render('about')
-})
+// ============================================================
 
 module.exports = router
